@@ -1,0 +1,132 @@
+@import './variables.styl'
+// @import './Animations.styl'
+
+// @import '../components/Parallax/Parallax.styl'
+@import '../components/Header/Header.styl'
+// @import '../components/MenuBar/MenuBar.styl'
+// @import '../components/NavBar/NavBar.styl'
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Gotham.eot');
+  src: local('Gotham'),
+    url('../fonts/gotham.woff2') format('woff2'),
+    url('../fonts/gotham.otf') format('otf'),
+    url('../fonts/Gotham.ttf') format('ttf'),
+    url('../fonts/gotham.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Akkurat Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/akkurat-mono.eot');
+  src: local('Akkurat Mono'),
+    url('../fonts/akkurat-mono.woff2') format('woff2'),
+    url('../fonts/Akkurat-Mono.otf') format('otf'),
+    url('../fonts/Akkurat-Mono.ttf') format('ttf'),
+    url('../fonts/akkurat-mono.woff') format('woff')
+}
+
+html
+  overflow-x: hidden
+  width: 100%
+  position: absolute
+
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  position: absolute
+  background: bg-color
+  -webkit-tap-highlight-color: rgba(0 0 0 0)
+
+  #root
+    width: 100vw
+
+  .App
+    width: 100%
+    overflow-x: hidden
+
+    .layout
+      width: 100%
+
+  .left-frame
+    position: fixed
+    left: 0
+    top: 0
+    height: 100vh
+    width: 12vh
+    background: $section-color
+    Z-index: 2
+
+    @media all and (max-width: 800px)
+      width: 0
+
+  .right-frame
+    position: fixed
+    right: 0
+    top: 0
+    height: 100vh
+    width: 12vh
+    background: $section-color
+    Z-index: 2
+    @media all and (max-width: 800px)
+      width: 0
+
+  h1
+  h2
+  h3
+  h4
+  h5
+  h6
+  p
+  li
+  ul
+  span
+    font-family: 'Akkurat Mono', sans-serif
+    font-weight: 900
+    margin: 0
+    padding: 0
+    user-select: none
+    color: #555056
+
+  li
+    font-family: 'Raleway', sans-serif
+    list-style: none
+    color: #555056
+
+  a
+    color: #9090cc
+    text-decoration: none
+
+  h3
+    font-size: 2em
+    color: #e0ad9c
+
+  .text-container
+    height: 100vh
+    background: $section-color
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  .text-block
+    background: white
+    width: 50%
+    padding: 15px 50px
+    margin: 10vh 0
+
+    h3
+    p
+      margin: 20px 0px
+
+  .news-feed
+    background: $section-color
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column

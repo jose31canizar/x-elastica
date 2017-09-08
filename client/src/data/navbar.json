@@ -1,0 +1,22 @@
+[
+  {
+    "title":"Home",
+    "route":"home"
+  },
+  {
+    "title":"About",
+    "route":"about"
+  },
+  {
+    "title":"Disciplines",
+    "route":"disciplines"
+  },
+  {
+    "title":"Software",
+    "route":"software"
+  },
+  {
+    "title":"Contact",
+    "route":"contact"
+  }
+]
