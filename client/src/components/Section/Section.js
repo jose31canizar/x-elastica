@@ -5,8 +5,8 @@ import './Section.styl'
 class Section extends Component {
   render() {
     return (
-      <div className="Section" id={this.props.id}>
-        <h2>{this.props.name}</h2>
+      <div className="Section" id={this.props.name}>
+          <div className='markdown' dangerouslySetInnerHTML={{__html: require(`../../content/${this.props.data}.md`)}} />
       </div>
     );
   }

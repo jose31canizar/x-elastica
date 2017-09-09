@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from '../../data/navbar.json'
+import data from '../../data/sections.json'
 import { Link } from 'react-router-dom'
 import SmoothScroll from '../SmoothScroll/SmoothScroll'
 import './NavBar.styl'
@@ -19,9 +19,9 @@ class NavBar extends Component {
   componentWillMount() {
     document.addEventListener('scroll', this.flip)
   }
-  setSelected(title) {
+  setSelected(name) {
     this.setState({
-      selected: title
+      selected: name
     })
   }
   flip() {
@@ -56,13 +56,13 @@ class NavBar extends Component {
           <h1>X Elastica</h1>
           <ul>
             {data.map((item, i) => (
-              <Link className="nav-link" to={`/${item.route}`} onMouseDown={this.setSelected.bind(this, item.title)}>
-                <li className={"nav-item-above "  + (item.title === this.state.selected ? "selected-page" : "")}>
-                  {item.title}
+              <Link className="nav-link" to={`/${item.route}`} onMouseDown={this.setSelected.bind(this, item.name)}>
+                <li className={"nav-item-above "  + (item.name === this.state.selected ? "selected-page" : "")}>
+                  {item.name}
                 </li>
-                <SmoothScroll section={'q' + (i+1)}>
-                  <li className={"nav-item " + (item.title === this.state.selected ? "selected-page" : "")} onMouseDown={this.setSelected.bind(this, item.title)}>
-                    {item.title}
+                <SmoothScroll section={item.name}>
+                  <li className={"nav-item " + (item.name === this.state.selected ? "selected-page" : "")} onMouseDown={this.setSelected.bind(this, item.name)}>
+                    {item.name}
                   </li>
                 </SmoothScroll>
               </Link>

@@ -90,8 +90,11 @@
   "devDependencies": {
     "d3": "^4.10.2",
     "flubber": "^0.4.0",
-    "markdown-loader": "^2.0.1",
+    "html-loader": "^0.5.1",
+    "json-loader": "^0.5.7",
+    "markdown-loader": "^2.0.0",
     "paths-js": "^0.4.5",
+    "raw-loader": "^0.5.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-css-modules": "^4.7.1",
     "react-faux-dom": "^4.0.3",
@@ -99,6 +102,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "svgo": "^0.7.2",
+    "text-loader": "0.0.1",
     "vivus": "^0.4.2"
   }
 }
