@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Section from '../Section/Section'
 
 class About extends Component {
   render() {
     return (
-      <div>thank you!</div>
+      <Section name='About' data='about'/>
     )
   }
 }

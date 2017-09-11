@@ -20,6 +20,11 @@
     "data":"software"
   },
   {
+    "name":"Projects",
+    "route":"projects",
+    "data":"projects"
+  },
+  {
     "name":"Contact",
     "route":"contact",
     "data":"contact"
