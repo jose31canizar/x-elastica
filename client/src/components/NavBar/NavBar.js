@@ -63,6 +63,7 @@ class NavBar extends Component {
     // })
   }
   render() {
+    console.log(window.location.href);
     return (
       <div className='nav-bar-wrapper'>
         <div className={'nav-bar' + (this.state.flip ? ' flip' : '')}>
@@ -77,13 +78,19 @@ class NavBar extends Component {
                 </Link>
                 {this.state.DropDown === item.name && item.sections.length !== 0 ? (
                   <div className='dropdown' onMouseOut={this.hideDropDown}>
-                    {item.sections.map((s, i) => (
+                    {window.location.href.includes(item.route) ? (item.sections.map((s, i) => (
 
                         <SmoothScroll section={s.replace(/\s+/g, '-').toLowerCase()}>
                         <li>{s}</li>
                         </SmoothScroll>
 
-                    ))}
+                    ))) : (item.sections.map((s, i) => (
+
+                        <Link to={`/${item.route}/${s.replace(/\s+/g, '-').toLowerCase()}`}>
+                        <li>{s}</li>
+                        </Link>
+
+                    ))) }
                   </div>
                 ) : ''}
               </Link>
