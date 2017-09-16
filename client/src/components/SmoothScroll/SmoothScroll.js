@@ -4,7 +4,7 @@ class SmoothScroll extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        negativeOffset: 0,
+        negativeOffset: 100,
         timer: null
       }
       this.handleSectionClick = this.handleSectionClick.bind(this);

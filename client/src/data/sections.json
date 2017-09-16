@@ -1,32 +1,46 @@
 [
   {
-    "name":"Home",
-    "route":"home",
-    "data":"home"
-  },
-  {
     "name":"About",
     "route":"about",
-    "data":"about"
+    "data":"about",
+    "sections": []
   },
   {
     "name":"Disciplines",
     "route":"disciplines",
-    "data":"disciplines"
+    "data":"disciplines",
+    "sections": [
+      "Advanced Finite Element Simulations",
+      "Performance Based Earthquake Engineering",
+      "Probabilistic and Statistical Analyses",
+      "Concrete Deterioration",
+      "Complex Laboratory Testing"
+    ]
   },
   {
     "name":"Software",
     "route":"software",
-    "data":"software"
+    "data":"software",
+    "sections": [
+      "ATENA",
+      "MERLIN",
+      "PPACS"
+    ]
   },
   {
     "name":"Projects",
     "route":"projects",
-    "data":"projects"
+    "data":"projects",
+    "sections": [
+      "Nuclear Containment Vessel Structures",
+      "Concrete Dams",
+      "Bridges"
+    ]
   },
   {
     "name":"Contact",
     "route":"contact",
-    "data":"contact"
+    "data":"contact",
+    "sections": []
   }
 ]

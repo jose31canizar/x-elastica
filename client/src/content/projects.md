@@ -1,7 +1,7 @@
 ##Projects
 <br>
 <br>
-###Nuclear Containment Vessel Structures
+<h3 id='nuclear-containment-vessel-structures'>Nuclear Containment Vessel Structures</h3>
 
 >###Capacity of AAR-Affected Shear Wall
 ***
@@ -20,7 +20,7 @@ Reported mechanical properties of concrete
 <br>
 <br>
 
->>>####Matlab: τc = 81 days, τl =61 days, and ε∞AAR = 0.22%.
+<pre>Matlab: τ<sub>c</sub> = 81 days, τ<sub>l</sub> = 61 days, and ε∞<sub>AAR</sub> = 0.22%.</pre>
 
 >>• Note: Expansion relatively small
 
@@ -51,7 +51,7 @@ Reported mechanical properties of concrete
 >• Using these values a normal distribution model is assumed with the reported values as mean, and a COV and
 <br>
 <br>
->• A set of 100 values of $\tau_l$ and $\tau_c$, degradation curves are obtained.
+>• A set of 100 values of τ<sub>l</sub> and τ<sub>c</sub>, degradation curves are obtained.
 <br>
 <br>
 >###Finite Element Model
@@ -150,7 +150,9 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 >• Cracked area under AAR expansion.
 <br>
 <br>
-##Concrete Dams
+
+<h3 id='concrete-dams'>Concrete Dams</h3>
+
 >###SA and UQ of Cohesive Crack Model
 ***
 >###Mode I and II Fracture Mechanics: Sensitivity Assessment
@@ -172,7 +174,7 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
   >• Reliability of the system is evaluated with MCS-based failure probability:
   Pfmean = G (H1, B1, RV (μ, σ))
 
-##Bridges
+<h3 id='bridges'>Bridges</h3>
 
 >###Epistemic-Temporal UQ in AAR-affected Viaduct
 ***

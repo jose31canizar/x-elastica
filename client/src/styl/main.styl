@@ -1,5 +1,5 @@
 @import './variables.styl'
-// @import './Animations.styl'
+@import './Animations.styl'
 
 // @import '../components/Parallax/Parallax.styl'
 @import '../components/Header/Header.styl'
@@ -86,13 +86,31 @@ body
   li
   ul
   span
+  a
     font-family: 'Akkurat Mono', sans-serif
     font-weight: 900
     margin: 0
     padding: 0
     user-select: default
     color: #555056
-
+  pre
+    font-family: 'Gotham', sans-serif;
+    font-weight: 900;
+    color: #ccc0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  sub
+    line-height: 0
+    vertical-align: baseline
+    bottom: -1em
+    position: relative
+  super
+    line-height: 0
+    vertical-align: baseline
+    top: -1em
+    position: relative
   li
     font-family: 'Akkurat Mono', sans-serif
     list-style: none
@@ -141,3 +159,11 @@ body
     justify-content: center
     align-items: center
     flex-direction: column
+
+  .links
+    display: block
+    a
+      display: block
+    h2
+    a
+      margin: 15px 0

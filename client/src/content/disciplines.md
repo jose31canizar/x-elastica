@@ -1,10 +1,10 @@
 ##Disciplines
 <br>
-###Advanced Finite Element Simulations
+<h3 id='advanced-finite-element-simulations'>Advanced Finite Element Simulations</h3>
 <br>
-We apply State of the Art finite element proprietay codes to perfrom nonlinear, transient analyses of 2D and 3D structures. Our core codes are described below.
+>We apply State of the Art finite element proprietary codes to perform nonlinear, transient analyses of 2D and 3D structures. Our core codes are described below.
 
-###Performance Based Earthquake Engineering
+<h3 id='performance-based-earthquake-engineering'>Performance Based Earthquake Engineering</h3>
 <br>
 >###Classification
 ***
@@ -41,8 +41,9 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
   >• The PEER PBEE framework developed by PEER facilitates direct calculation of the effects of uncertainty and randomness on each step in the performance based procedure [Porter 2003].
   <br>
   >•  PBEE-2 can be expressed in terms of a triple integral that is an application of the total probability theorem:
-
-  >>####g[DV|D] = ∫ ∫ ∫ p [DV|DM,D] p [DM|EDP,D] p [EDP|IM,D] dIM dEDP dDM
+  <pre>
+    g[DV|D] = &#x222b; &#x222b; &#x222b; p [DV|DM,D] p [DM|EDP,D] p [EDP|IM,D] dIM dEDP dDM
+  </pre>
   <br>
 
 >###Seismic Hazard Analysis
@@ -92,7 +93,7 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
   <br>
   <br>
 
-  >>• Two sample ground motion records with acceleration time histories, velocity and Arias intensity time hisories are shown in the following figure. Note that the blue part belongs to the strong ground motion which includes 90% of Arias intensity.
+  >>• Two sample ground motion records with acceleration time histories, velocity and Arias intensity time histories are shown in the following figure. Note that the blue part belongs to the strong ground motion which includes 90% of Arias intensity.
   <br>
   <br>
 >###Structural Analysis
@@ -127,12 +128,11 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
   >• Fragility curve is a continuous function showing the probability of exceedance of a certain limit state (LS) for specific level of ground motion intensity measure (IM)
     <br>
     <br>
-    >>####Fragility = P [LS | IM = im]
-
-    >>####or,
-
-    >>####Fragility = P [EDP >= edp | IM = im]
+    <pre>Fragility = P [LS | IM = im]</pre>
+    <pre>or,</pre>
+    <pre>Fragility = P [EDP >= edp | IM = im]</pre>
   <br>
+
   >• They can be 2D (scalar) or 3D (vector-valued). Fragility curves can be used to show the probability of exceedance of any LS conditioned on PGA or first-mode spectral acceleration. On the other hand, fragility surfaces show the probability of exceedance conditioned on two intensity measures and since they are more accurate.
   <br>
   <br>
@@ -155,7 +155,7 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
       <br>
       >>• Annualized Life Loss: Reclamation defines the risk as Annualized Life Loss, and uses a guideline of 0.001 fatalities per year to address it. When the mean estimate is above the guideline of 0.001 fatalities per year, there is generally greater need to take action to reduce or better understand the risks. There is generally decreasing need to reduce or better understand the risks when they are below this guideline value. The primary means to portray risks is a risk curve that relates frequency f (mean number of events per year) of N or more fatalities, as a function of N (f-N chart).
 
-###Probabilistic and Statistical analyses
+<h3 id='probabilistic-and-statistical-analyses'>Probabilistic and Statistical analyses</h3>
 >###Contents
 ***
   >>Classification
@@ -202,13 +202,11 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
     <br>
     <br>
     >• Risk can be defined as: "Measure of the probability and severity of an adverse effect to life, health, property, or environment". Risk assessment is the process of deciding whether existing risks are tolerable and if not, whether alternative risk control measures are justified or will be implemented.
-
-    >>>####Risk = ∫ P [Load Events] × P [Responses | Loads] × C [Responses , Loads]
-
-    >>>####where P is the conditional probability and C stands for the consequences.
+    <pre>Risk = ∫ P [Load Events] × P [Responses | Loads] × C [Responses , Loads]</pre>
+    <pre>where P is the conditional probability and C stands for the consequences.</pre>
 
     >• Fragility is a continuous function showing the probability of exceedance of a certain limit state (LS) for a specific level of ground motion IM, im:
-      >>>####Fragility = P [LS | IM ≥ im]
+      <pre>Fragility = P [LS | IM ≥ im]</pre>
 
     >• Vulnerability is different from fragility. The former measures loss (in terms dollars, deaths, and downtime) while the latter measures probability. A vulnerability curve expresses the loss as a function of IM. Three major types of vulnerability curves are:
       >>>• Measuring repair cost
@@ -218,11 +216,10 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
       >>>• Measuring downtime
 
     >• Reliability: Structural reliability analysis deals with the quantitative assessment of the failure probability, given a model of the uncertainty in the structural, environmental and load parameters. It estimates the structural safety and can be used in a decision process. It is evaluated based on capacity (R) and demand (S) as:
-      >>>####Z = R - S
+      <pre>Z = R - S</pre>
 
     >• Resilience: Community resilience is the ability to prepare and plan for, absorb, recover from, and more successfully adapt to actual or potential adverse events. Resilience also is defined as a normalized function indicating capability to sustain a level of functionality or performance, Q(t) , for a given dam or lifeline over a life cycle time.
-
-      >>>####Resilience(%) = ∫ t0 tRE Q(t) / tRE dt
+      <pre>Resilience(%) = ∫ <sub>t0</sub> <super>tRE</super> Q(t) / t<sub>RE</sub> dt</pre>
 
 >###Probabilistic Assessment
 ***
@@ -238,7 +235,7 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
 
   >###Sensitivity Analysis
     >• Sensitivity analysis (SA) determines the impact of a variation in an input parameter on output results. Mathematically, this corresponds to the partial derivative of the output function with respect to an input parameter at a given design point. The response for X = (X1, X2, ..., Xn) RVs can be expressed as
-      >>>####θ = f( X1 , X2 , ... , Xn )
+      <pre>θ = f( X<sub>1</sub> , X<sub>2</sub> , ... , X<sub>n</sub> )</pre>
 
     >• 2n+1 analyses are performed using mean, minimum and maximum RV values. Finally, the results are dorted in descending form which builds a so-called "Tornado diagram".
   >###Design of Experiments
@@ -305,7 +302,7 @@ We apply State of the Art finite element proprietay codes to perfrom nonlinear, 
   >###Multiple Linear Regression Analysis
     >• Multiple linear regression (MLR) is the extension of simple linear regression (SLR) to the case of multiple explanatory variables (which may or may not be truly independent). Hence, rather than modeling the mean response as a straight line, as in simple regression, it is now modeled as a function of several explanatory variables.
     >• Multiple explanatory variables are required when scientific knowledge and experience tells us they are likely to be useful.
-      >>>####y = β0 + Σ ni=1 βi xi + ε
+      <pre>y = β<sub>0</sub> + Σ<super>n</super> <sub>i=1</sub> β<sub>i</sub> x<sub>i</sub> + ε</pre>
 
     >• How can we decide what variables to include? Following Ockham's razor among competing hypotheses that predict equally well, the one with the fewest assumptions should be selected. In the context of MLR this means that a model with fewer parameters is to be preferred to one with more. However, this needs to be weighed against the ability of the model to actually predict anything.
     >• Two particular statistical models can be considered:

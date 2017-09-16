@@ -1,3 +1,7 @@
+<h1 id="x-elastica" style="
+    font-size: 6em;
+    color: #a59ca0;
+">X Elastica</h1>
 <br>
 ##A little bit about us.
 <br>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import data from '../../data/sections.json'
-import { Link } from 'react-router-dom'
+import { Link, withRouter, Route } from 'react-router-dom'
 import SmoothScroll from '../SmoothScroll/SmoothScroll'
 import './NavBar.styl'
 
@@ -11,10 +11,13 @@ class NavBar extends Component {
       selected: "Home",
       distance: 0,
       flip: false,
-      currentScrollTop: document.body.scrollTop
+      currentScrollTop: document.body.scrollTop,
+      DropDown: ''
     }
     this.setSelected = this.setSelected.bind(this)
     this.flip = this.flip.bind(this)
+    this.showDropDown = this.showDropDown.bind(this)
+    this.hideDropDown = this.hideDropDown.bind(this)
   }
   componentWillMount() {
     document.addEventListener('scroll', this.flip)
@@ -40,7 +43,7 @@ class NavBar extends Component {
       } else {
         return {
           distance: oldDistance - 1,
-          flip: true
+          flip: false
         }
       }
 
@@ -49,22 +52,40 @@ class NavBar extends Component {
       currentScrollTop: document.body.scrollTop
     })
   }
+  showDropDown(name) {
+    this.setState({
+      DropDown: name
+    })
+  }
+  hideDropDown() {
+    // this.setState({
+    //   DropDown: ''
+    // })
+  }
   render() {
     return (
       <div className='nav-bar-wrapper'>
         <div className={'nav-bar' + (this.state.flip ? ' flip' : '')}>
-          <h1>X Elastica</h1>
+          <h1></h1>
           <ul>
             {data.map((item, i) => (
-              <Link className="nav-link" to={`/${item.route}`} onMouseDown={this.setSelected.bind(this, item.name)}>
-                <li className={"nav-item-above "  + (item.name === this.state.selected ? "selected-page" : "")}>
-                  {item.name}
-                </li>
-                <SmoothScroll section={item.name}>
+              <Link className="nav-link" to={`/${item.route}`} onMouseDown={this.setSelected.bind(this, item.name)} onMouseOver={this.showDropDown.bind(this, item.name)}>
+                <Link to={`/${item.route}`}>
                   <li className={"nav-item " + (item.name === this.state.selected ? "selected-page" : "")} onMouseDown={this.setSelected.bind(this, item.name)}>
                     {item.name}
                   </li>
-                </SmoothScroll>
+                </Link>
+                {this.state.DropDown === item.name && item.sections.length !== 0 ? (
+                  <div className='dropdown' onMouseOut={this.hideDropDown}>
+                    {item.sections.map((s, i) => (
+
+                        <SmoothScroll section={s.replace(/\s+/g, '-').toLowerCase()}>
+                        <li>{s}</li>
+                        </SmoothScroll>
+
+                    ))}
+                  </div>
+                ) : ''}
               </Link>
             ))}
           </ul>
@@ -73,5 +94,8 @@ class NavBar extends Component {
     );
   }
 }
+
+// <Link to={`/${item.route}/${s.replace(/\s+/g, '-').toLowerCase()}`}>
+//</Link>
 
 export default NavBar;

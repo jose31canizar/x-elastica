@@ -90,6 +90,7 @@
   "devDependencies": {
     "d3": "^4.10.2",
     "flubber": "^0.4.0",
+    "history": "^4.7.2",
     "html-loader": "^0.5.1",
     "json-loader": "^0.5.7",
     "markdown-loader": "^2.0.0",

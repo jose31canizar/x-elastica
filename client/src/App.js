@@ -8,19 +8,27 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Layout from './layout/Layout'
 import './styl/main.styl'
+import createHistory from 'history/createBrowserHistory'
 
 class App extends Component {
   render() {
+    const history = createHistory()
+    history.listen((location, action) => {
+    })
     return (
       <div className="App">
         <BrowserRouter>
           <Layout>
             <Switch>
-              <Route path='/' component={Home}/>
+              <Route exact path='/' component={About}/>
+              <Route exact path='/home' component={About}/>
               <Route path='/about' component={About}/>
-              <Route path='/disciplines' component={Disciplines}/>
-              <Route path='/software' component={Software}/>
-              <Route path='/projects' component={Projects}/>
+              <Route exact path='/disciplines' component={Disciplines}/>
+              <Route path='/disciplines/:subroute' component={(props) => <Disciplines {...props}/>}/>
+              <Route exact path='/software' component={Software}/>
+              <Route path='/software/:subroute' component={(props) => <Software {...props}/>}/>
+              <Route exact path='/projects' component={Projects}/>
+              <Route path='/projects/:subroute' component={(props) => <Projects {...props}/>}/>
               <Route path='/contact' component={Contact}/>
             </Switch>
           </Layout>

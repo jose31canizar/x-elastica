@@ -1,6 +1,6 @@
 ##Software
 <br>
-###ATENA
+<h3 id='atena'>ATENA</h3>
 >###Contents
 ***
 >What is ATENA
@@ -177,17 +177,11 @@ We strongly support our users in their analytic work with ATENA. Support is main
 <br>
 >• Recommended: PC with MS Windows 7, 64 bit 8 GB RAM, 500 GB HDD, GPU with OpenGL and HW acceleration, designed for CAD (nVidia FX, AMD FireGL, etc.)
 
-###Merlin
-<br>
-Merlin is a proprietary specialized 3D nonlinear/transient finite element software which has been under continuous development by Saouma''s group to specifically address problems associated with: fracture and deterioration of concrete, safety assessment of dams and nuclear containment structure.
+<h3 id='merlin'>Merlin</h3>
+>Merlin is a proprietary specialized 3D nonlinear/transient finite element software which has been under continuous development by Saouma''s group to specifically address problems associated with: fracture and deterioration of concrete, safety assessment of dams and nuclear containment structure.
 <br>
 <br>
 Development was made possible in great part through initial funding from the Electric Power Research Institute (<a href='https://www.epri.com/#/'>EPRI</a>) and then the Tokyo Electric Power Service Company (<a href='http://www.tepsco.co.jp/english/company/about/index.html'>TEPSCO</a>).
-<br>
-<br>
->###Documentation
->• <a href='./merlin-user'>User Manual</a>
->• <a href='./merlin-theory'>Technical Manual</a>
 <br>
 <br>
 >###Dynamic Analysis
@@ -256,9 +250,5 @@ Development was made possible in great part through initial funding from the Ele
 >• Beaver: Special purpose code to generate FE mesh for double curvature arch dams.
 <br>
 <br>
->• <a href='./kumo'>Kumo</a>: Powerful 3D mesh generator (based on T3D) written for dam and fracture analysis.
-<br>
-<br>
->• <a href='./spider'>Spider</a>: OpenGL based for display of incremental nonlinear analysis, eigenvectors, and transient analysis results.
 
 ###PPACS
