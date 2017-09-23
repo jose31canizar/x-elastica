@@ -57,10 +57,15 @@ class NavBar extends Component {
       DropDown: name
     })
   }
-  hideDropDown() {
-    // this.setState({
-    //   DropDown: ''
-    // })
+  hideDropDown(event) {
+    console.log(event.relatedTarget);
+    var e = event.toElement || event.relatedTarget;
+    if (e.parentNode == this || e == this) {
+       return;
+    }
+    this.setState({
+      DropDown: ''
+    })
   }
   render() {
     console.log(window.location.href);
@@ -77,7 +82,7 @@ class NavBar extends Component {
                   </li>
                 </Link>
                 {this.state.DropDown === item.name && item.sections.length !== 0 ? (
-                  <div className='dropdown' onMouseOut={this.hideDropDown}>
+                  <div className='dropdown' onMouseLeave={this.hideDropDown}>
                     {window.location.href.includes(item.route) ? (item.sections.map((s, i) => (
 
                         <SmoothScroll section={s.replace(/\s+/g, '-').toLowerCase()}>

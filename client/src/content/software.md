@@ -184,6 +184,8 @@ We strongly support our users in their analytic work with ATENA. Support is main
 Development was made possible in great part through initial funding from the Electric Power Research Institute (<a href='https://www.epri.com/#/'>EPRI</a>) and then the Tokyo Electric Power Service Company (<a href='http://www.tepsco.co.jp/english/company/about/index.html'>TEPSCO</a>).
 <br>
 <br>
+<h2>Documentation</h2>
+{{<div><a href={require('../content/merlin-user.pdf')} target='_blank'>User Manual</a><br></br><a href={require('../content/merlin-theory.pdf')} target='_blank'>Technical Manual</a></div>}}
 >###Dynamic Analysis
 >• Time Integration: Implicit (Newmark &beta, Hughes &alpha); Explicit (single CPU/Parallel).
 <br>
@@ -248,6 +250,9 @@ Development was made possible in great part through initial funding from the Ele
 <br>
 >###Supporting Tools
 >• Beaver: Special purpose code to generate FE mesh for double curvature arch dams.
+
+>{{<div>•<a href={require('../content/kumo.pdf')} target='_blank'> Kumo</a><p>Powerful 3D mesh generator (based on T3D) written for dam and fracture analysis.</p></div>}}
+>{{<div>•<a href={require('../content/spider.pdf')} target='_blank'> Spider</a><p>OpenGL based for display of incremental nonlinear analysis,eigenvectors, and transient analysis results.</p></div>}}
 <br>
 <br>
 

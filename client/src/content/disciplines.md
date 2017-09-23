@@ -20,30 +20,40 @@
   >• Multi-hazard!
   <br>
   <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/multi_hazard.png')}/>}}</pre>
 >###Performance Based Earthquake Engineering
 ***
   >###Terminology
   <br>
-  >• Performance-Based Engineering (PBE)
+  >• Performance-Based Engineering (PBE) is defined as consisting of the selection of design criteria, appropriate structural systems, layout, proportioning, and detailing for a structure and its non-structural components and contents, and the assurance and control of construction quality and long-term maintenance, such that at specified levels of all the excitation and with defined levels of reliability, the structure or facility will not be damaged beyond certain limit states [Bertero 2002].
   <br>
-  >• Performance-Based Earthquake Engineering (PBEE)
+  >• Performance-Based Earthquake Engineering (PBEE) is defined as the application of PBE to the case that seismic hazard controls the design. Therefore, PBEE involves the complete design, construction and control (monitoring) of the maintenance and function of the structure to assure that the constructed structures will resist the effects of earthquake ground motions with different severity within specified limiting levels of damage [Bertero 2000].
   <br>
   <br>
+  >• In the US, interest in performance based seismic design initiated in the 1980s among engineers engaged in seismic retrofit of existing buildings.
+  >• Based on Structural Engineers Association of California (SEAOC) Vision 2000 the first step in PBEE is the definition and selection of the performance objectives.
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/SEAOC.png')}/>}}</pre>
+
   >###First Generation of PBEE
   <br>
   >• First Generation of PBEE (also known as PBEE-1) is shown conceptually in the following figure and it is assumed that a structure is loaded by earthquake-induced lateral forces that produce nonlinear response in structural components.
   <br>
   <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/PBEE1.png')}/>}}</pre>
+
   >###Second Generation of PBEE
   <br>
   >• In 1997 the Pacific Earthquake Engineering Research Center (PEER) decided to develop a more robust methodology for performance-based earthquake engineering, called as next generation PBEE (also called as PBEE-2 or PEER PBEE).
   <br>
   >• The PEER PBEE framework developed by PEER facilitates direct calculation of the effects of uncertainty and randomness on each step in the performance based procedure [Porter 2003].
   <br>
+  <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/PBEE2.png')}/>}}</pre>
+
   >•  PBEE-2 can be expressed in terms of a triple integral that is an application of the total probability theorem:
-  <pre>
+  <div class='equation'>
     g[DV|D] = &#x222b; &#x222b; &#x222b; p [DV|DM,D] p [DM|EDP,D] p [EDP|IM,D] dIM dEDP dDM
-  </pre>
+  </div>
   <br>
 
 >###Seismic Hazard Analysis
@@ -72,12 +82,19 @@
   <br>
   <br>
   >>• Seismic hazard curves are usually an important and useful tool in risk analysis of dams.
+  <br>
+  <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/hazard_prob_sample.png')}/>}}</pre>
 
 >###Seismic Hazard De-Aggregation
   >>• Seismic hazard de-aggregation plots are useful since they can provide a clear vision on contribution of the different parameters in record selection process. Also they can be used for the source identification controlling the hazard at the dam site.
   <br>
   <br>
   >>• The modal distance, magnitude, and inter-event term can be found in this plot.
+  <br>
+  <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/pga_2.png')}/>}}</pre>
+
 
 >###Ground Motion Selecting and Scaling
   >>• One spectrum is required for each of the several seismic hazard intervals used for analysis which are selected from the site seismic hazard curve. Three types of spectra are acceptable:
@@ -96,6 +113,9 @@
   >>• Two sample ground motion records with acceleration time histories, velocity and Arias intensity time histories are shown in the following figure. Note that the blue part belongs to the strong ground motion which includes 90% of Arias intensity.
   <br>
   <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/472FN.png')}/>}}</pre>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/2871FN.png')}/>}}</pre>
+
 >###Structural Analysis
 ***
 <br>
@@ -103,6 +123,10 @@
     >>• CLA is a procedure in which first a dam is subjected to a (relatively large) set of (un-scaled or as-recorded) ground motions and is analyzed numerically.
     >>• If the ground motion records are taken from a bin, they can represent an earthquake scenario defined by (Mbin, Rbin), the magnitude and distance representative of the bin. Then, from the results, EDP vs. IM are determined and form the so-called cloud response.
     >>• CLA method usually is used in conjunction with probabilistic seismic demand analysis (PSDA).
+    <br>
+    <br>
+    <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/cloud_sample.png')}/>}}</pre>
+
   >###Incremental Dynamic Analysis
     >>• IDA is a dynamic procedure in which first a set of N ground motions are selected. Each ground motion is scaled successively to multiple IM levels.
     >>• Each of the scaled ground motions are then applied to the dam separately and the maximum EDP is computed.
@@ -110,17 +134,25 @@
     >>• Finally, a multiple-record IDA curve is developed, which is a group of N single-record IDA curves.
     >>• A full IDA procedure for each ground motion results dam failure under high scale factors. It corresponds to a flat-line in IDA curve.
     >>• The IDA method has the capability to extract probabilistic information that describes the global instability collapse limit state of the dam.
+    <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/IDA_sample.png')}/>}}</pre>
+
   >###Multiple Stripe Analysis
     >>• MSA is a procedure in which a set of m seismic intensity levels (SIL) or stripes are selected first.
     >>• If m = 1 or 2, this method is called single- or double-stripe analysis (SSA/DSA), respectively.
     >>• Each stripe in this method corresponds to a specific SIL and it is possible to perform a probabilistic seismic hazard analysis (PSHA) for each one separately. Consequently, N different ground motions may be selected for each of the m stripes.
     >>• The resulted m * N ground motions are then used for nonlinear transient analyses of the dam and the EDPs are computed.
+    <br>
+    <br>
+    <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/MSA_sample.png')}/>}}</pre>
+
   >###Endurance Time Analysis
     >>• All the CLA, IDA and MSA methods require large number of nonlinear dynamic analyses and are computationally demanding for dam-reservoir-foundation system.
     >>• ETA is a dynamic pushover procedure which estimates the seismic performance of the dam when subjected to limited number of pre-designed intensifying excitation, which are called endurance time acceleration functions (ETAF).
     >>• The ETAFs are aimed to shake the dam from a low excitation level — with a response in the elastic range — to a medium excitation level — where the dam experiences some nonlinearity — and finally to a high excitation level, which causes the failure. All these responses ranges are experienced in a single time history analysis.
     <br>
     <br>
+    <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/ETA_sample.png')}/>}}</pre>
+
 >###Fragility Analysis
 ***
 <br>
@@ -128,19 +160,25 @@
   >• Fragility curve is a continuous function showing the probability of exceedance of a certain limit state (LS) for specific level of ground motion intensity measure (IM)
     <br>
     <br>
-    <pre>Fragility = P [LS | IM = im]</pre>
-    <pre>or,</pre>
-    <pre>Fragility = P [EDP >= edp | IM = im]</pre>
+    <div class='equation'>Fragility = P [LS | IM = im]</div>
+    <div class='equation'>or,</div>
+    <div class='equation'>Fragility = P [EDP >= edp | IM = im]</div>
   <br>
 
   >• They can be 2D (scalar) or 3D (vector-valued). Fragility curves can be used to show the probability of exceedance of any LS conditioned on PGA or first-mode spectral acceleration. On the other hand, fragility surfaces show the probability of exceedance conditioned on two intensity measures and since they are more accurate.
   <br>
   <br>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/surface_IM_IM.png')}/>}}</pre>
+
 >###Loss Analysis and Decision-Making
 ***
 <br>
   >###Dam Safety
     >• There are various agencies that have established risk-based dam safety decision guidelines. Risk management encompasses activities related to making risk-informed decisions, prioritizing evaluations of risk, prioritizing risk reduction activities, and making program decisions associated with managing a portfolio of facilities. Risk management includes evaluating the environmental, social, cultural, ethical, political, and legal considerations of all parts of the decision process.
+    <br>
+    <br>
+    <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/Dam-Safety.png')}/>}}</pre>
+
     >• Risk assessment is "the process of deciding whether existing risks are tolerable and present risk control measures are adequate and if not, whether alternative risk control measures are justified or will be implemented. Risk assessment incorporates the risk analysis and risk evaluation phases".
     >• Risk assessment encompasses activities including risk analyses and the decisions resulting from individual risk analyses. This typically involves developing and evaluating potential failure modes, coordinating supporting engineering studies, developing structural loads, risk analysis, consequence analysis, and recommendations to support decisions. There is some overlap between risk assessment and risk management as they are both integral in decision-making.
   >###Tolerable Risks
@@ -154,8 +192,11 @@
       <br>
       <br>
       >>• Annualized Life Loss: Reclamation defines the risk as Annualized Life Loss, and uses a guideline of 0.001 fatalities per year to address it. When the mean estimate is above the guideline of 0.001 fatalities per year, there is generally greater need to take action to reduce or better understand the risks. There is generally decreasing need to reduce or better understand the risks when they are below this guideline value. The primary means to portray risks is a risk curve that relates frequency f (mean number of events per year) of N or more fatalities, as a function of N (f-N chart).
+      <br>
+      <br>
+      <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/USBR.png')}/>}}</pre>
 
-<h3 id='probabilistic-and-statistical-analyses'>Probabilistic and Statistical analyses</h3>
+<h3 id='probabilistic-and-statistical-analyses'>Probabilistic and Statistical Analyses</h3>
 >###Contents
 ***
   >>Classification
@@ -188,6 +229,7 @@
     >• Uncertainty Quantification (UQ) is a general term used for probabilistic assessment of structural system based on either linear or nonlinear finite element simulations. It is used in the case that one or more random variables in the system are not known priori.
     <br>
     <br>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/analysis_complexity-1.png')}/>}}</pre>
 
 >###Terminology
 ***
@@ -195,9 +237,12 @@
     >• There are different terms dealing with safety assessment of structures and infra-structures. One may clearly defines the project goal and select the required tools to reach the goal.
     <br>
     <br>
-    >• Be careful about the words you choose. Not all of them have the same meaning in technical language! However, most of them are connect to each other to some extend.
+    >• Be careful about the words you choose. Not all of them have the same meaning in technical language! However, most of them are connected to each other to some extent.
     <br>
     <br>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/connection_prob_concept-1.png')}/>}}</pre>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/terminology-1.png')}/>}}</pre>
+
     >• Hazard refers to an uncertain relationship between some level of (seismic, aging, hydrological) intensity measure and the frequency or probability of a particular location experiencing at least that level of demand.
     <br>
     <br>
@@ -206,7 +251,7 @@
     <pre>where P is the conditional probability and C stands for the consequences.</pre>
 
     >• Fragility is a continuous function showing the probability of exceedance of a certain limit state (LS) for a specific level of ground motion IM, im:
-      <pre>Fragility = P [LS | IM ≥ im]</pre>
+      <div class='equation'>Fragility = P [LS | IM ≥ im]</div>
 
     >• Vulnerability is different from fragility. The former measures loss (in terms dollars, deaths, and downtime) while the latter measures probability. A vulnerability curve expresses the loss as a function of IM. Three major types of vulnerability curves are:
       >>>• Measuring repair cost
@@ -216,10 +261,23 @@
       >>>• Measuring downtime
 
     >• Reliability: Structural reliability analysis deals with the quantitative assessment of the failure probability, given a model of the uncertainty in the structural, environmental and load parameters. It estimates the structural safety and can be used in a decision process. It is evaluated based on capacity (R) and demand (S) as:
-      <pre>Z = R - S</pre>
+      <div class='equation'>Z = R - S</div>
 
     >• Resilience: Community resilience is the ability to prepare and plan for, absorb, recover from, and more successfully adapt to actual or potential adverse events. Resilience also is defined as a normalized function indicating capability to sustain a level of functionality or performance, Q(t) , for a given dam or lifeline over a life cycle time.
-      <pre>Resilience(%) = ∫ <sub>t0</sub> <super>tRE</super> Q(t) / t<sub>RE</sub> dt</pre>
+      <div class='equation'>Resilience(%) = ∫ <sub>t0</sub> <super>tRE</super> Q(t) / t<sub>RE</sub> dt</div>
+      <div class='image-title'>Hazard</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/hazard_sample-1.png')}/>}}</pre>
+      <div class='image-title'>Risk</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/risk_sample-1.png')}/>}}</pre>
+      <div class='image-title'>Fragility</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/fragility_sample-1.png')}/>}}</pre>
+      <div class='image-title'>Vulnerability</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/vulnerability_sample-1.png')}/>}}</pre>
+      <div class='image-title'>Reliability</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/reliability_sample-1.png')}/>}}</pre>
+      <div class='image-title'>Resilience</div>
+      <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/resilience_sample-1.png')}/>}}</pre>
+
 
 >###Probabilistic Assessment
 ***
@@ -232,17 +290,22 @@
     <br>
     <br>
     >• The basic qualifier refers to directly observable quantities such as material properties (e.g. strength), loads (e.g. earthquake magnitude), environmental phenomenons (e.g. AAR), and geometric dimensions (section size).
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Epistemic_aleatory-1.png')}/>}}</pre>
 
   >###Sensitivity Analysis
     >• Sensitivity analysis (SA) determines the impact of a variation in an input parameter on output results. Mathematically, this corresponds to the partial derivative of the output function with respect to an input parameter at a given design point. The response for X = (X1, X2, ..., Xn) RVs can be expressed as
-      <pre>θ = f( X<sub>1</sub> , X<sub>2</sub> , ... , X<sub>n</sub> )</pre>
+      <div class='equation'>θ = f( X<sub>1</sub> , X<sub>2</sub> , ... , X<sub>n</sub> )</div>
 
     >• 2n+1 analyses are performed using mean, minimum and maximum RV values. Finally, the results are dorted in descending form which builds a so-called "Tornado diagram".
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Tornado_Diagram-1.png')}/>}}</pre>
+
   >###Design of Experiments
     >• By definition, design of experiments (DOE) refers to a statistical technique systematically defines the minimum (or efficient) number of experimental sampling points to optimize the computed or observed responses.
     >• There are different techniques to build a DOE: Randomized Complete Block Design, Latin Square Experimental Design, Full Factorial Design, Fractional Factorial Design, Central Composite Design, Box-Behnken Experimental Design, Plackett-Burman Experimental Design, Taguchi Experimental Design. Some of them are shown in the following figure:
     <br>
     <br>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/DOE.png')}/>}}</pre>
+
     >• DOEs are then used to construct a meta-model.
     <br>
     <br>
@@ -253,8 +316,16 @@
     >• The input factors are not always known with a sufficient degree of certainty.
     >• Their uncertainty is often expressed in terms of probability distributions.
     >• The following figures show the bi-variate probability density function (PDF) and its cumulative density function (CDF).
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_PDF-1.png')}/>}}</pre>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_CDF-1.png')}/>}}</pre>
+
     >• The uncertainties of input parameters may have dependencies on each other.
     >• In the following plots the most left one shows "negative partial correlation", the second one presents "zero correlation", the third one shows "positive partial correlation" and the most right one represents the "positive full correlation" among the X and Y random variables.
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_corr_n050-1.png')}/>}}</pre>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_corr_000-1.png')}/>}}</pre>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_corr_p050-1.png')}/>}}</pre>
+    <pre>{{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Bivariate_corr_p070-1.png')}/>}}</pre>
+
   >###Sampling Techniques
     >• Truly are those exhibiting "true randomness", which is difficult (if not impossible) to generate through machines.
     >• Pseudo random sequences are those appearing to show randomness yet nevertheless exhibit a specific, repeatable pattern. They have been generated by applying a set of rules.
@@ -268,6 +339,13 @@
       >>• Sobol sequence
 
     >• The following figures compare four sampling techniques (two from pseudo-random and two from quasi-random methods). Two sampling sizes were studied in order to reveal the impact of population on distribution uniformity. All the cases consist of two-dimensional random variables with a uniform distribution of zero mean and unit standard deviation
+    <pre>
+    <div class='image-title'>N<sub>sim</sub> = 100</div>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/four_sampling_100-1.png')}/>}}
+    <div class='image-title'>N<sub>sim</sub> = 400</div>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/four_sampling_500-1.png')}/>}}
+    </pre>
+
   >###Cross Correlation
     >• In real-world problem, usually there is a degree of correlation among the individual RVs (e.g. concrete modulus of elasticity and compressive strength).
     <br>
@@ -276,6 +354,10 @@
     <br>
     <br>
     >• The following plot shows cross-correlation among 10 different RVs used to formulate an advance cohesive crack model. The diagonal arrays show individual histograms, while the off-diagonal ones are cross-correlations.
+    <br>
+    <br>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/joint_Corr_matrix-1.png')}/>}}
+
   >###Spatial Correlation
     >• Spatial variability of structural properties (i.e. material properties) is very important which can have substantial impact on the structural damage and failure (e.g. crack initiation and localization in homogeneous stress state region)
     <br>
@@ -287,6 +369,27 @@
     <br>
     <br>
     >• Three realizations of the random fields with three different correlation length for AAR expansion in concrete, ε∞AAR , in a large (60m × 15m) are shown in this figure.
+    <pre>
+    <div class='image-title'>ζ = 2 m</div>
+    <div class='equation'>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d201-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d202-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d203-1.png')}/>}}
+    </div>
+    <div class='image-title'>ζ = 10 m</div>
+    <div class='equation'>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d1001-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d1002-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d1003-1.png')}/>}}
+    </div>
+    <div class='image-title'>ζ = 20 m</div>
+    <div class='equation'>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d2001-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d2002-1.png')}/>}}
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/d2003-1.png')}/>}}
+    </div>
+    </pre>
+
   >###Temporal Correlation
     >• Temporal uncertainties are related to time-dependent variability and can be considered in two levels: 1) temporal prediction (uncertainty in future states) and 2) temporal retrodiction (uncertainty in past state).
     <br>
@@ -295,6 +398,10 @@
     <br>
     <br>
     >• Temporal correlation in concrete elastic modulus of an AAR-affected structure over 100 years time period (right plot) is shown by three precision.
+    <div class='image-title'>Temperature Correlation</div>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/COTemp-report_Large-1.png')}/>}}
+    <div class='image-title'>Degradation Correlation</div>
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/Beta_Ec_r-1.png')}/>}}
 
 >###Statistical Assessment
 ***
@@ -302,7 +409,7 @@
   >###Multiple Linear Regression Analysis
     >• Multiple linear regression (MLR) is the extension of simple linear regression (SLR) to the case of multiple explanatory variables (which may or may not be truly independent). Hence, rather than modeling the mean response as a straight line, as in simple regression, it is now modeled as a function of several explanatory variables.
     >• Multiple explanatory variables are required when scientific knowledge and experience tells us they are likely to be useful.
-      <pre>y = β<sub>0</sub> + Σ<super>n</super> <sub>i=1</sub> β<sub>i</sub> x<sub>i</sub> + ε</pre>
+      <div class='equation'>y = β<sub>0</sub> + Σ<super>n</super> <sub>i=1</sub> β<sub>i</sub> x<sub>i</sub> + ε</div>
 
     >• How can we decide what variables to include? Following Ockham's razor among competing hypotheses that predict equally well, the one with the fewest assumptions should be selected. In the context of MLR this means that a model with fewer parameters is to be preferred to one with more. However, this needs to be weighed against the ability of the model to actually predict anything.
     >• Two particular statistical models can be considered:
@@ -311,7 +418,7 @@
       >>• Schwartz's Bayesian information criterion (BIC) is similar to AIC, but penalizes additional parameters more.
 
     >• The following table shows a sample of MLR on a AAR affected concrete structures. Different parameters are statistically investigated, e.g. type, size, degree of expansion, reinforcement ratio, degree of degradation, etc. Three models are compared: general, AIIC, and BIC. For each one the estimated coefficient, its standard deviation, significance and etc. are shown.
-
+    {{<img src={require('../img/disciplines/probabilistic-and-statistical-analyses/AIC_BIS_NED-1.png')}/>}}
 
 ###Concrete Deterioration
 
