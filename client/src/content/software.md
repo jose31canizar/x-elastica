@@ -186,6 +186,17 @@ Development was made possible in great part through initial funding from the Ele
 <br>
 <h2>Documentation</h2>
 {{<div><a href={require('../content/merlin-user.pdf')} target='_blank'>User Manual</a><br></br><a href={require('../content/merlin-theory.pdf')} target='_blank'>Technical Manual</a></div>}}
+
+<pre>
+  {{<img src={require('../img/software/merlin/dam-1.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/merlin/dam-2.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/merlin/dam-3.png')}/>}}
+</pre>
+
 >###Dynamic Analysis
 >• Time Integration: Implicit (Newmark &beta, Hughes &alpha); Explicit (single CPU/Parallel).
 <br>
