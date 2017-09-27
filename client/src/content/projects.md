@@ -1,6 +1,6 @@
 ##Projects
-<br>
-<br>
+<br />
+<br />
 <h3 id='nuclear-containment-vessel-structures'>Nuclear Containment Vessel Structures</h3>
 
 >###Capacity of AAR-Affected Shear Wall
@@ -14,8 +14,8 @@
 </pre>
 
 Reported mechanical properties of concrete
-<br>
-<br>
+<br />
+<br />
 <pre>
 <div class='image-title'>SW</div>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/test-results-A-1.png')}/>}}
@@ -26,19 +26,19 @@ Reported mechanical properties of concrete
 </pre>
 
 >###Dimensions of the Shear Wall
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/model_2-1.png')}/>}}
 </pre>
 
 >###Parameter Identification: Kinetics
 >• We have a model, but which parameters to use?
-<br>
-<br>
+<br />
+<br />
 >Calibration from data (above) at 260 days
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Expansion_optim_260-1.png')}/>}}
 </pre>
@@ -48,39 +48,39 @@ Reported mechanical properties of concrete
 >>• Note: Expansion relatively small
 
 >Prediction for 1000 days
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/ASR_Prediction_1000-1.png')}/>}}
 </pre>
 
 >• Assumed a uniform distributional model ranging from a minimum 0.25% and a maximum of 0.45%.
-<br>
-<br>
+<br />
+<br />
 >• Latin Hypercube sampling (LHS) technique
-<br>
-<br>
+<br />
+<br />
 >• Simulations = 100 curves
-<br>
-<br>
+<br />
+<br />
 >• Least-squares optimizations
-<br>
-<br>
+<br />
+<br />
 >###Parameter Identification: Deterioration
-<br>
-<br>
+<br />
+<br />
 >• E and f't at time t0 and t260 are given.
-<br>
-<br>
+<br />
+<br />
 >• Need to predict values ar t1000.
-<br>
-<br>
+<br />
+<br />
 >• Using these values a normal distribution model is assumed with the reported values as mean, and a COV and
-<br>
-<br>
+<br />
+<br />
 >• A set of 100 values of τ<sub>l</sub> and τ<sub>c</sub>, degradation curves are obtained.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/ASR_Prediction_ft-1.png')}/>}}
 </pre>
@@ -89,11 +89,11 @@ Reported mechanical properties of concrete
 </pre>
 
 >###Finite Element Model
-<br>
-<br>
+<br />
+<br />
 Mesh
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/FE_mesh-1.png')}/>}}
 </pre>
@@ -103,8 +103,8 @@ Mesh
 
 Load
 >###Results: Calibration
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Model_BC-1.png')}/>}}
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/applied_disp_2-1.png')}/>}}
@@ -112,20 +112,20 @@ Load
 </pre>
 
 >• Used mean values for SW and SW-260
-<br>
-<br>
+<br />
+<br />
 >• Found response to be too stiff.
-<br>
-<br>
+<br />
+<br />
 >• We recognize experimental uncertainties and attributed this discrepancy to 'slack' in the system
-<br>
-<br>
+<br />
+<br />
 >• Exercise 'our right' to calibrate
-<br>
-<br>
+<br />
+<br />
 >• All displacements are simply multiplied by 2.3
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Deterministic_NOASR-1.png')}/>}}
 </pre>
@@ -134,8 +134,8 @@ Load
 </pre>
 
 >###Results: Failure Mode
-<br>
-<br>
+<br />
+<br />
 >• Structural response under cyclic displacement (without ASR).
 >• Deformed shapes; Contour: max. principal strains
 <pre>
@@ -143,28 +143,28 @@ Load
 </pre>
 
 >• Crack propagation in web and columns
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Crack_propagation-1.png')}/>}}
 </pre>
 
 >###Results: Sensitivity Analyses
-<br>
-<br>
+<br />
+<br />
 >• n=15 RVs are retained. Thus, 2n+1=31 analyses are required.
-<br>
-<br>
+<br />
+<br />
 >• Capacity curves: experimental curve falls within the range of results.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Sensitivity_NOASR-1.png')}/>}}
 </pre>
 
 >• Tornado Diagram: Results sorted.
-<br>
-<br>
+<br />
+<br />
 >• The most important parameters are retained as variables, the others are retained as constants.
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Sensitivity_Tornado-1.png')}/>}}
@@ -173,30 +173,30 @@ Load
 Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 
 >###Automation of Probabilistic Analysis
-<br>
-<br>
+<br />
+<br />
 >• p1.m: Input data definition, RV selection, probability distributional models, ranges, and correlation coefficients; Generation of FE meshes.
-<br>
-<br>
+<br />
+<br />
 >• p2.m: Execute finite element code (Merlin)
-<br>
-<br>
+<br />
+<br />
 >• p3.m: Data mining
-<br>
-<br>
+<br />
+<br />
 >• p4.m: Summary results
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/File_Structure-1.png')}/>}}
 </pre>
 
 >• Plot desired responses. For each output parameter, results are plotted along with their mean, 16 and 84 fractiles ranges (which correspond to minus and plus one standard deviation in a log-normal distributional model).
-<br>
-<br>
+<br />
+<br />
 >###Results: Time-Dependent AAR Effect
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/SW_vs_SWD_3D0-1.png')}/>}}
 </pre>
@@ -205,36 +205,36 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 </pre>
 
 >• Frequency and cross-correlation shown. SW and SW-1000 exhibit similar (relative) trend for capacity increase or decease.
-<br>
-<br>
+<br />
+<br />
 >• About 60% of the analysis the shear capacity was reduced by the pre-existence of ASR, and in about 40% it increased.
-<br>
-<br>
+<br />
+<br />
 >• No definite answer as to whether AAR increases or reduces the shear strength.
-<br>
-<br>
+<br />
+<br />
 >• This requires further investigation.
 >###Aleatory-Epistemic-Temporal UQ of NCVS
 ***
 >####A to Z
-<br>
-<br>
+<br />
+<br />
 >• NVCS with soil-structure interaction, AAR, material and joint nonlinearities, uncertainty quantification, time-dependent capacity and fragility curves, possibly incorporate loss analysis, risk assessment and decision making.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/Boulder_1-1.png')}/>}}
 </pre>
 
 >####Some Deterministic Results
-<br>
-<br>
+<br />
+<br />
 >• Displacement results under self-weight and AAR expansion.
-<br>
-<br>
+<br />
+<br />
 >• Cracked area under AAR expansion.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/npp_stress-1.png')}/>}}
 {{<img src={require('../img/projects/nuclear-containment-vessel-structures/npp_crack-1.png')}/>}}
@@ -246,8 +246,8 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 ***
 >###Mode I and II Fracture Mechanics: Sensitivity Assessment
 >• Simulations: 2*14+1=35 displacement control pushover alalyses are performed.
-<br>
-<br>
+<br />
+<br />
 <pre>
 <div class='image-title'>Mode I</div>
 {{<img src={require('../img/projects/concrete-dams/senst_mode_1_025_POA-1.png')}/>}}
@@ -363,26 +363,26 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 </pre>
 
 >###AAR Expansion Properties
-<br>
-<br>
+<br />
+<br />
 >• Nonlinear concrete properties are similar to those in shear wall model.
-<br>
-<br>
+<br />
+<br />
 >• AAR model parameters are:
-<br>
-<br>
+<br />
+<br />
 >###Degree of AAR non-uniformity
-<br>
-<br>
+<br />
+<br />
 >• Uniform
-<br>
-<br>
+<br />
+<br />
 >• Partial Non-uniform
-<br>
-<br>
+<br />
+<br />
 >• Fully Non-uniform
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/bridges/unif_deformation-1.png')}/>}}
 {{<img src={require('../img/projects/bridges/P-Nonunif_deformation-1.png')}/>}}
@@ -395,8 +395,8 @@ Can now proceed with an "intelligent" LHS-based Uncertainty Quantification
 </pre>
 
 Uniform Fully Non-uniform
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/bridges/determ_para_2-1.png')}/>}}
 </pre>
@@ -405,23 +405,23 @@ Uniform Fully Non-uniform
 </pre>
 
 >###System Identification: Theory
-<br>
-<br>
+<br />
+<br />
 >• How to determine the kinetics and deterioration for real-world problems?
-<br>
-<br>
+<br />
+<br />
 >• Three types of uncertainties are incorporating: past, present, future.
-<br>
-<br>
+<br />
+<br />
 >• Petrographer estimates the past expansion.
-<br>
-<br>
+<br />
+<br />
 >• Accelerated AAR experiment gives information about future expansion.
-<br>
-<br>
+<br />
+<br />
 >• Engineer combines these two; uses optimization techniques to get full curve.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/bridges/AAR_1-1.png')}/>}}
 </pre>
@@ -430,11 +430,11 @@ Uniform Fully Non-uniform
 </pre>
 
 >###System Identification: Application
-<br>
-<br>
+<br />
+<br />
 >• Trapezoidal uncertainty is assumed in the future.
-<br>
-<br>
+<br />
+<br />
 >• LHS is used with 121 simulations.
 Kinetics Deterioration
 <pre>
@@ -447,17 +447,17 @@ Kinetics Deterioration
 </pre>
 
 >###Effect of Kinetics (classification)
-<br>
-<br>
+<br />
+<br />
 >• Class I: The great 'distortion' of the section with much flexure in both the flanges but also the web.
-<br>
-<br>
+<br />
+<br />
 >• Class II: The vertical elongation of the web is clearly dominant, resulting in smaller curvatures in the web.
-<br>
-<br>
+<br />
+<br />
 >• Black solid circle and square corresponds to major cracking.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/bridges/Chillon_1_def_new-1.png')}/>}}
 </pre>
@@ -475,14 +475,14 @@ Kinetics Deterioration
 </pre>
 
 >###Probabilistic Based Conditional Assessment
-<br>
-<br>
+<br />
+<br />
 >• 55% os models fall into class I and 45% in class II.
-<br>
-<br>
+<br />
+<br />
 >• Conditional probability is shown as well as 16, 50 and 84\% fractiles.
-<br>
-<br>
+<br />
+<br />
 <pre>
 {{<img src={require('../img/projects/bridges/prob_displ_x_15-1.png')}/>}}
 </pre>
