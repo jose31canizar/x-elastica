@@ -51,9 +51,16 @@ It is used at more than 1000 installations worldwide.
 >###Why is ATENA Unique
 >>###Modeling of Reinforcement
 Arbitrary reinforcement arrangement can be easily included in the model either as discrete bars or as smeared reinforcement. Bond failure can be activated just by single click. Pre-stressing and external cables are supported as well.
+<pre>
+  {{<img src={require('../img/software/atena/vyztuz_horni_obrys_2.png')}/>}}
+</pre>
+
 
 >>###Real Time Visualization of Results
 Only in ATENA the engineers can observe the deformation shape and the cracking pattern even during analysis using the unique and extensive runtime visualization capabilities.
+<pre>
+  {{<img src={require('../img/software/atena/Kotveni-2.jpg')}/>}}
+</pre>
 
 >>###Crack Visualization
 ATENA supports realistic visualization of cracks and cracking pattern in all stages of the nonlinear analysis a post-processing. Cracks can be displayed not only on the surface, but also in the interior. For more realistic visualization, only the visible cracks can be filtered.
@@ -77,9 +84,9 @@ ATENA supports realistic visualization of cracks and cracking pattern in all sta
 >• Based on finite element method and fracture mechanics.
 <br />
 <br />
->• Advanced material models for concrete, reinforcement, steel, rock, soil and
+>• Advanced material models for concrete, reinforcement, steel, rock, soil and masonry.
 <br />
-<br /> masonry.
+<br />
 >• Support for the analysis of modern fibre reinforced concrete materials: SHCC,
 <br />
 <br /> ECC, HPRFC, UHPFRC.
@@ -97,18 +104,47 @@ ATENA supports realistic visualization of cracks and cracking pattern in all sta
 <br />
 >###Where You Can Use ATENA
 >•Modeling of Buildings
-<br />
-<br />
->•Modeling of Bridges
-<br />
-<br />
->•Nuclear Industry
-<br />
-<br />
->•Renewable Energy
+<pre>
+  {{<img src={require('../img/software/atena/3D_beams_big_1.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/atena/3D_beams_big_5.png')}/>}}
+</pre>
 <br />
 <br />
 
+>• Modeling of Bridges
+<pre>
+  {{<img src={require('../img/software/atena/trojsky-most-01.jpg')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/atena/troja1.png')}/>}}
+</pre>
+<br />
+<br />
+
+>• Nuclear Industry
+<pre>
+  {{<img src={require('../img/software/atena/Olkiuoto_1.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/atena/BARC_2.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/atena/BARC_1.png')}/>}}
+</pre>
+<br />
+<br />
+
+>• Renewable Energy
+<pre>
+  {{<img src={require('../img/software/atena/WindMillSee.png')}/>}}
+</pre>
+<pre>
+  {{<img src={require('../img/software/atena/GroutedConnection-6.png')}/>}}
+</pre>
+<br />
+<br />
 
 >###Maintenance and Support
 We strongly support our users in their analytic work with ATENA. Support is mainly provided by email and phone calls. The solution to many questions can be found also in our FAQ & Online Forum. New versions of ATENA are released every year. Maintenance is provided for free for one year after the software purchase. After that it can be prolonged at annual rate corresponding to 15% of the program price.
