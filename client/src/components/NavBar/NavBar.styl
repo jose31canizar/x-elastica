@@ -40,6 +40,9 @@ nav-bar-text-color = #f1f1f1
     justify-content: center
     align-items: center
     height: nav-bar-height
+    @media all and (max-width: 1200px)
+      justify-content: space-between
+      overflow-y: scroll
 
     .nav-link:hover > .nav-item-above
         // transform: rotate3d(1, 0, 0, 0)
