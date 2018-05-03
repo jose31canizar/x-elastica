@@ -20,9 +20,7 @@
   >• Multi-hazard!
   <br />
   <br />
-  <pre>{{
-    <img src={require('../img/disciplines/performance-based-earthquake-engineering/multi_hazard.png')}/>
-    }}</pre>
+  <pre>{{<img src={require('../img/disciplines/performance-based-earthquake-engineering/multi_hazard.png')}/>}}</pre>
 >###Performance Based Earthquake Engineering
 ***
   >###Terminology
