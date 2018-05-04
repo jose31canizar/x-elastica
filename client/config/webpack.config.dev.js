@@ -11,6 +11,8 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
+const marked = require("marked");
+const renderer = new marked.Renderer();
 
 // Webpack uses `publicPath` to determine where the app is being served from. In
 // development, we always serve from the root. This makes config easier.
@@ -165,13 +167,16 @@ module.exports = {
             test: /\.md$/,
             use: [
               {
-                loader: 'babel-loader'
+                loader: require.resolve('babel-loader')
               }, {
                 loader: 'markdown-component-loader'
               }, {
                 loader: "markdown-loader",
                 options: {
-                  gfm: false
+                  gfm: false,
+                  breaks: true,
+                  smartypants: true,
+                  pedantic: true
                 }
               }
             ]
